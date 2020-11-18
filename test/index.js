@@ -12,7 +12,7 @@ const parser = new EmoteParser(fetcher, {
 Promise.all([
     fetcher.fetchTwitchEmotes(),
     fetcher.fetchBTTVEmotes(),
-    fetcher.fetchBTTVEmotes('11computer'),
+    fetcher.fetchBTTVEmotes(22484632),
     fetcher.fetchFFZEmotes('sylux98')
 ]).then(() => {
     const kappa = fetcher.emotes.get('Kappa');
